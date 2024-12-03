@@ -19,7 +19,6 @@ class Movie:
     """
    
     def __init__(self, _title, _genre, _director, _year):
-
         """
         Initializing a class named Movie with four data members that are its attributes.
     
@@ -29,6 +28,7 @@ class Movie:
             _director(str): The director of the movie.
             _year(int): The year the movie was released.
            """
+
         self._title = _title
         self._genre = _genre
         self._director = _director
@@ -57,6 +57,7 @@ class Movie:
         Return the year of the movie.
         """
         return self._year
+
 class StreamingService:
     """
     A class representing the Streaming Service that has two data members.
@@ -115,6 +116,7 @@ class StreamingGuide:
     Attributes:
         _streaming_services (): An empty list of streaming services
     """
+
     def __init__(self):
         """
         Initiliazing _streaming_services with an empty list
@@ -137,6 +139,7 @@ class StreamingGuide:
         Parameters:
             name(str): Name of the Streaming Service that needs to be deleted.
         """
+
         for service in self._streaming_services:
             if service.get_name() == name:
                 self._streaming_services.remove(service)
@@ -153,6 +156,7 @@ class StreamingGuide:
             list: A list returned with the name and year of the movie as well as the streaming service
             None: If the movie is not available on any StreamingService it will return to none
         """
+
         result = []
         services_found = False
 
